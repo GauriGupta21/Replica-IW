@@ -1,0 +1,37 @@
+.search-tabs {
+  display: flex;
+}
+
+.image-tab {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #70757a;
+  transition: color 0.3s;
+}
+
+.image-tab.active {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+}
+
+.image-tab:hover {
+  color: #1a73e8;
+}
+
+.image-results-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-result {
+  width: calc(20% - 20px);
+  margin: 10px;
+}
+
+.image-result img {
+  width: 100%;
+  height: auto;
+}

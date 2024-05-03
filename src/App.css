@@ -1,38 +1,287 @@
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page {
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.google-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-link {
+  width: 400px;
+  display: flex;
+  gap: 10px
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.search-buttons {
+  display: flex;
+}
+
+.search-button,
+.feeling-lucky-button {
+  border: none;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover,
+.feeling-lucky-button:hover {
+  background-color: #f0f0f0;
+}
+
+.languages-container {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 6px;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.language-selector a {
+  color: #1a73e8;
+}
+
+.languages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.languages-list li {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.languages-list li:hover {
+  text-decoration: underline;
+}
+
+
+
+.light {
+
+  background-color: #fff;
+  color: #333;
+}
+
+.dark {
+
+  background-color: #333;
+  color: #fff;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+
+  padding-top: 50px;
+}
+
+.logo {
+  width: 180px;
+
+}
+
+
+.footer {
+  width: 100vw;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-top: 227px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-link {
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-links1 {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ded6d6;
+
+  align-items: center;
+
+  background-color: #f2f2f2;
+}
+
+.india {
+  text-decoration: none;
+  color: black;
+  margin-left: 55px;
+}
+
+.footer-links2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50px;
+  border-bottom: 1px solid #ded6d6;
+
+}
+
+.footer-linksLeft {
+  margin-left: 45px;
+  width: 445px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.footer-linksRight {
+  width: 250px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-linkR {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px 20px;
+
+  margin-top: 0;
+  position: relative;
+  padding-left: 1210px
+}
+
+.navbar-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: gray;
+  align-items: center;
+  font-size: 13px;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.lab-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+
+.header {
+  color: var(--text-color);
+}
+
+
+.search-result {
+  color: var(--text-color);
+}
+
+
+.footer {
+  color: var(--text-color);
+}
+
+
+
+
+.search-input {
+  color: var(--text-color);
+}
+
+
+
+.dark-link .link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-link .link {
+  color: black;
 }
